@@ -1,0 +1,68 @@
+/*мобільне меню*/
+
+
+.menu-container{
+flex-direction: column;
+position: fixed;
+top: 16px;
+right: 16px;
+left: 0;
+width: 100%;
+height: 100%;
+padding: 48px 40px;
+display: flex;
+
+&.is-open{
+    transform: translateX(0);
+}
+
+@media screen and (max-width: 459px){
+    padding: 40px 25px;
+}
+
+@media screen and (min-width: 767px) {
+    display: none;
+}
+
+}
+
+
+.menu-toggle{
+    min-height: 40px;
+    min-width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+
+    &:hover,
+    &:focus {
+            color: var(--accent-color);
+    
+        }
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+
+        
+}
+
+
+.mobile-menu {
+    padding: 0;
+    margin-bottom: auto;
+    list-style: none;
+}
+
+
+
