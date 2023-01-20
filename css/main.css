@@ -1386,6 +1386,11 @@ button {
   padding-bottom: 60px;
   /*Join*/
 }
+@media screen and (min-width: 1200px) {
+  .footer {
+    padding-bottom: 0;
+  }
+}
 .footer .footer__container {
   text-align: center;
   padding-left: 15px;
@@ -1464,7 +1469,7 @@ button {
 }
 @media screen and (min-width: 1200px) {
   .footer .footer__join {
-    margin-left: 70px;
+    margin-left: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1498,20 +1503,9 @@ button {
 }
 
 /*Sign*/
-.sign {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin-left: auto;
-}
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .sign {
     width: 450px;
-    margin-left: 93px;
   }
 }
 .sign .sign__title {
@@ -1556,7 +1550,6 @@ button {
   border: 1px solid rgba(255, 255, 255, 0.3);
   font-size: 16px;
   line-height: 1.25;
-  padding-left: 16px;
   background-color: transparent;
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -1567,7 +1560,6 @@ button {
 @media screen and (min-width: 1200px) {
   .form-sign .form-sign__input {
     width: 358px;
-    margin-right: 12px;
     margin-bottom: 0;
   }
 }
