@@ -1386,11 +1386,6 @@ button {
   padding-bottom: 60px;
   /*Join*/
 }
-@media screen and (min-width: 1200px) {
-  .footer {
-    padding-bottom: 0;
-  }
-}
 .footer .footer__container {
   text-align: center;
   padding-left: 15px;
@@ -1432,6 +1427,11 @@ button {
 }
 .footer .footer-adress {
   margin-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .footer .footer-adress {
+    margin-bottom: 0;
+  }
 }
 .footer .footer-address__link {
   display: -webkit-box;
