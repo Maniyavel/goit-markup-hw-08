@@ -91,7 +91,7 @@ button {
 }
 
 .advantages-section__container {
-  width: 480px;
+  max-width: 480px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -102,12 +102,12 @@ button {
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .advantages-section__container {
-    width: 768px;
+    max-width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
   .advantages-section__container {
-    width: 1200px;
+    max-width: 1200px;
   }
 }
 
@@ -314,7 +314,7 @@ button {
 
 /*Клієнти*/
 .clients-section__container {
-  width: 480px;
+  max-width: 480px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -325,12 +325,12 @@ button {
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .clients-section__container {
-    width: 768px;
+    max-width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
   .clients-section__container {
-    width: 1200px;
+    max-width: 1200px;
   }
 }
 
@@ -558,6 +558,7 @@ button {
 /*Герой*/
 .hero {
   padding: 118px 30px;
+  max-width: 480px;
   margin: 0 auto;
   background-color: var(--background-color-secondary);
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/Header-img.jpg");
@@ -681,7 +682,7 @@ button {
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100vw;
+  height: 100vh;
   padding: 48px 40px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1069,7 +1070,6 @@ button {
 @media screen and (min-width: 768px) {
   .projects__item {
     width: 354px;
-    width: calc((100% - 60px) / 2);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1177,7 +1177,7 @@ button {
 
 /*Team*/
 .team-section__container {
-  width: 480px;
+  max-width: 480px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -1188,12 +1188,12 @@ button {
 }
 @media screen and (min-width: 768px) {
   .team-section__container {
-    width: 768px;
+    max-width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
   .team-section__container {
-    width: 1200px;
+    max-width: 1200px;
   }
 }
 
@@ -1354,7 +1354,7 @@ button {
 }
 
 .container {
-  width: 480px;
+  max-width: 480px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -1426,7 +1426,7 @@ button {
   }
 }
 .footer .footer-adress {
-  margin-bottom: 28px;
+  margin-bottom: 60px;
 }
 .footer .footer-address__link {
   display: -webkit-box;
@@ -1454,6 +1454,9 @@ button {
 .footer .footer__mail {
   margin-bottom: 12px;
 }
+.footer .footer__join {
+  margin-bottom: 60px;
+}
 @media screen and (min-width: 768px) {
   .footer .footer__join {
     margin-left: 167px;
@@ -1478,15 +1481,8 @@ button {
   font-size: 14px;
   line-height: 1.14;
   margin-bottom: 20px;
-  margin-top: 60px;
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .footer .footer__join-title {
-    margin-top: 0;
-  }
-}
-
-.footer__contact {
+.footer .footer__contact {
   color: #FFFFFF;
   font-style: normal;
   text-decoration: none;
@@ -1497,7 +1493,7 @@ button {
   -webkit-transition-property: color;
   transition-property: color;
 }
-.footer__contact:hover, .footer__contact:focus {
+.footer .footer__contact:hover, .footer .footer__contact:focus {
   color: var(--accent-color);
 }
 
@@ -1519,7 +1515,6 @@ button {
   }
 }
 .sign .sign__title {
-  margin-top: 20px;
   margin-bottom: 20px;
   font-weight: 700px;
   font-size: 14px;
