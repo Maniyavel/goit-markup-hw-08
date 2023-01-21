@@ -53,8 +53,7 @@
     .mobile-menu__icon{
         
                 margin: auto;
-                width: 18px;
-                height: 18px;
+                
                 right: 50%;
                 align-items: center;
                 cursor: pointer;
@@ -65,7 +64,7 @@
                     }
                 
 
-                @media screen and(max-width: 459px){
+                @media screen and(max-width: 320px){
                 padding: 40px 25px;
                 }
 
